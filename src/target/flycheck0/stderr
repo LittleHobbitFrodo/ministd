@@ -1,0 +1,16 @@
+warning: `panic` setting is ignored for `bench` profile
+    Updating crates.io index
+error: failed to get `bootloader` as a dependency of package `renderer v0.1.0 (/home/sam/Documents/prog/ministd/renderer)`
+    ... which satisfies path dependency `renderer` (locked to 0.1.0) of package `ministd v0.1.0 (/home/sam/Documents/prog/ministd/src)`
+
+Caused by:
+  failed to load source for dependency `bootloader`
+
+Caused by:
+  Unable to update /home/sam/Documents/prog/ministd/bootloader
+
+Caused by:
+  failed to read `/home/sam/Documents/prog/ministd/bootloader/Cargo.toml`
+
+Caused by:
+  No such file or directory (os error 2)

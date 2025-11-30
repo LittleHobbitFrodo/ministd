@@ -1,0 +1,31 @@
+[package]
+name = "ministd"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+#limine_rs={ path="../limine" }
+#bootloader={ path="../bootloader" }
+
+allocator={ path="allocator" }
+hashbrown = "0.15.4"
+static_assertions = "1.1.0"
+proc_macro={ path="proc_macro" }
+renderer={ path="../renderer" }
+
+[features]
+default=["all"]
+all=["vector", "string", "box", "allocator",
+    "renderer", "default-renderer", "rc", "spin",
+    "hashmap"]
+vector=[]
+string=[]
+box=[]
+allocator=[]
+renderer=[]
+default-renderer=[]
+rc=[]
+spin=[]
+hashmap=[]
+testing=[]
